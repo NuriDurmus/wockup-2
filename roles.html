@@ -1,0 +1,78 @@
+<!-- roles.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Roller</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Ortak Stil Dosyası -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Uygulama Adı</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Sayfalar</a></li>
+                <li class="nav-item"><a class="nav-link" href="layouts.html">Zone'lar</a></li>
+                <li class="nav-item"><a class="nav-link" href="users.html">Kullanıcılar</a></li>
+                <li class="nav-item active"><a class="nav-link" href="roles.html">Roller</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- İçerik -->
+    <div class="container">
+        <h2>Roller</h2>
+        <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#addRoleModal">Rol Ekle</button>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Rol Adı</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody id="roleTable">
+                <!-- Dinamik olarak roller eklenecek -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Rol Ekle Modal -->
+    <div class="modal fade" id="addRoleModal" tabindex="-1" aria-labelledby="addRoleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="addRoleForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Rol Ekle</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        
+                            <div class="form-group">
+                                <label for="roleName">Rol Adı</label>
+                                <input type="text" class="form-control" id="roleName" required>
+                            </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Kaydet</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap ve jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Roller JavaScript Dosyası -->
+    <script src="roles.js"></script>
+</body>
+</html>

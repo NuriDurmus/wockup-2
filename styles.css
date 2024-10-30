@@ -1,0 +1,196 @@
+/* styles.css */
+
+/* Genel Stil Ayarları */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Sol Menü Stil Ayarları */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 56px; /* Navbar yüksekliği */
+    left: 0;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right: 1px solid #dee2e6;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #343a40;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/* İçerik Alanı */
+.content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+/* Tablo Stil Ayarları */
+.table-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.table-actions .btn {
+    padding: 5px 10px;
+}
+
+/* Modal Stil Ayarları */
+.modal-header {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.modal-footer .btn {
+    min-width: 100px;
+}
+
+/* styles.css */
+
+/* ... mevcut stiller ... */
+
+/* Komponent Menü Toggle Butonu */
+.component-menu-toggle {
+    position: fixed;
+    top: 200px;
+    right: 0;
+    z-index: 1000;
+}
+
+.component-menu-toggle button {
+    border-radius: 5px 0 0 5px;
+}
+
+/* Komponent Menüsü */
+.component-menu {
+    position: fixed;
+    top: 100px;
+    right: -200px;
+    width: 200px;
+    background-color: #f8f9fa;
+    border-left: 1px solid #dee2e6;
+    padding: 10px;
+    transition: right 0.3s;
+    z-index: 1000;
+}
+
+.component-menu.open {
+    right: 0;
+}
+
+.component-item {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    margin-bottom: 5px;
+    cursor: move;
+    text-align: center;
+}
+
+.component-item:hover {
+    background-color: #e2e6ea;
+}
+
+/* Layout ve Zone Stil Ayarları */
+/* styles.css */
+
+/* ... mevcut stiller ... */
+
+/* GridStack için ek stiller */
+.grid-stack {
+    background: #fafafa;
+    min-height: 600px;
+}
+
+.grid-stack-item-content {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+    color: #dc3545;
+}
+
+.component-element {
+    position: relative;
+    border: 1px solid #dee2e6;
+    padding: 5px;
+    margin: 5px;
+    background-color: #fff;
+}
+
+.component-element:hover {
+    background-color: #e9ecef;
+}
+
+/* Komponent Menüsü */
+.component-menu-toggle {
+    position: fixed;
+    top: 200px;
+    right: 0;
+    z-index: 1000;
+}
+
+.component-menu-toggle button {
+    border-radius: 5px 0 0 5px;
+}
+
+.component-menu {
+    position: fixed;
+    top: 100px;
+    right: -200px;
+    width: 200px;
+    background-color: #f8f9fa;
+    border-left: 1px solid #dee2e6;
+    padding: 10px;
+    transition: right 0.3s;
+    z-index: 1000;
+}
+
+.component-menu.open {
+    right: 0;
+}
+
+.component-item {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    margin-bottom: 5px;
+    cursor: move;
+    text-align: center;
+}
+
+.component-item:hover {
+    background-color: #e2e6ea;
+}
+
